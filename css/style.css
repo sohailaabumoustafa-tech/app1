@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 250vh;
+}
+header{
+    
+    height: 70px;
+    
+    background: -webkit-repeating-linear-gradient(top,black,gray);
+    display: flex;
+  
+}
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px 0;
+    gap:10px
+}
+.header-content nav ul {
+    list-style: none;
+    display: flex;
+    /* flex-wrap: wrap;/ */
+    align-items: center;
+    gap: 5px;
+   
+}
+.brand{
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+.header-content nav ul li a{
+    text-decoration: none;
+    font-size: 19px;
+    /* margin: 0 5px;/ */
+    padding: 10px;
+   
+    color: #fff;
+}
+.section-form h2{
+    color: #fff;
+}
+#user-info{
+    display: none;
+}
+.section-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: -webkit-repeating-linear-gradient(top,black,gray);
+    text-align: center;
+    padding: 25px;
+    /* width: 45%;  / */
+    width: 90%;
+    max-width: 450px;
+    border-radius: 30px; 
+}
+.section-form form input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    outline: none;
+    caret-color: red;
+    text-transform: capitalize;
+}
+.section-form form input[type="submit"]:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+
+
+.products{
+    
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    .product-item{
+display: flex;
+outline: 3px solid #ddd;
+margin: 40px auto;
+/* flex-wrap: wrap;/ */
+
+width: 100%;
+flex-direction: column;
+align-items: center;
+text-align: center;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+padding: 25px;
+border-radius: 10px;
+position: relative;
+}
+
+.product-item img{
+   
+    margin-right: 15px;
+    height: 190px;
+   width: 100%;
+   max-width: 350px;
+   border-radius: 10px;
+  
+}
+
+.product-action{
+    flex: 1;
+    width: 100%;
+    /* text-align: right; / */
+    /* display: flex;/ */
+    /* flex-direction: column;/ */
+    /* justify-content: space-between;/ */
+    /* gap: 10;/ */
+    text-align: center;
+}
+.product-action .add-to-cart{
+    
+    width: 80%;
+    max-width: 200px;
+     border: 0;
+    background: -webkit-repeating-linear-gradient(top,black,gray);
+   border-radius: 5px;
+    padding: 12px;
+    font-weight: bold;
+    /* margin-left: auto;/ */
+    color: #fff;
+    text-align: center;
+    &:hover{
+        opacity: .8;
+        cursor: pointer;
+    }
+}
+.product-action i{
+    font-size: 30px;
+    color: #ddd;
+    /* margin: 5px;/ */
+    cursor: pointer;
+     /* margin-left: auto;/ */
+     position: absolute;
+     top: -20px;
+     right: -20px;
+     &:hover{
+        color: red;
+     }
+}
+.product-desc{
+    line-height: 60px;
+     
+}
+.product-desc span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.product-desc p{
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+}
+
+
+.cart{
+    margin: 0 15px;
+    position: relative;
+}
+.cart i{
+    font-size: 25px;
+color: #fff;
+cursor: pointer;
+}
+.cart .badge{
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    top: -10px;
+    right: -10px;
+}
+
+.veiwproduct{
+    display: none;
+    position: absolute;
+    width: 200px;
+    
+    background-color: gray;
+    
+    transform:  translate(-30%, 22px);
+    text-align: center;
+    outline:  3px solid black;
+    
+    border-radius: 10px;
+    
+}
+.veiwproduct a{
+    background-color: green;
+    display: block;
+    border-radius: 10px;
+}
+
+.box{
+    position: relative;
+    
+    #show{
+        display: none;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 10px;
+        top: 4px;
+       
+    }
+
+.eye1 , .eye2{
+      position: absolute;
+       font-size: 20px;
+        right: 10px;
+        top: 5px;
+        
+
+}
+.eye1{
+    display: none;
+}
+#show:checked ~ .eye1{
+display: block;
+}
+#show:checked ~ .eye2{
+display: none;
+}
+
+}
+
